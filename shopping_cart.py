@@ -79,8 +79,9 @@ if cart != []:
         print(item[1],"quantity: ", item[0],"Price: ",f'{item[2]:.2f}',"£")
         print(item[1],"discount 10% off: ","-",item[2]*10/100,"£")
         SubTotal += item[2]
+        originalPrice = item[2]
         price = item[2] - item[2]*10/100
-  Total = round(SubTotal - item[2] + price, 2)
+  Total = round(SubTotal - originalPrice + price, 2)
   print("Subtotal: ", f'{SubTotal:.2f}',"£")
   print("Total: ", f'{Total:.2f}',"£")       
 else:
