@@ -24,7 +24,8 @@ element = input("""
     Bread   :  80 p
     Milk    :  1.30 £
     Apples  :  1.00 £
-
+    
+Enter your order in the below format with item and quantity
 Eg: Milk 2:""")
 
 if element:
